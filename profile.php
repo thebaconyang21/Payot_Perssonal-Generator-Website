@@ -58,6 +58,20 @@ move_uploaded_file($tempName, $folder);
             display: block;
             margin: auto;
         }
+
+        .back-btn {
+            display: block;
+            width: 50%;
+            margin: 30px auto 0;
+            padding: 12px;
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
     </style>
 </head>
 <body>
@@ -80,6 +94,7 @@ move_uploaded_file($tempName, $folder);
                 <b>Biography:</b> <?php echo $bio; ?>
             </div>
         </div>
+        <a href="index.php" class="back-btn">Back to Form</a>
     </div>
 
 </body>
